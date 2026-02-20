@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #fdf4ff;
+  color: #4c1d95;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f5d0fe;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.role {
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* SECTION */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* JUDUL */
+h2 {
+  font-size: 1.7rem;
+  color: #7e22ce;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: " ✨";
+}
+
+/* ABOUT */
+.about p {
+  font-size: 1rem;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: white;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.25);
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: white;
+  width: 280px;
+  padding: 22px;
+  border-radius: 22px;
+  box-shadow: 0 12px 28px rgba(168, 85, 247, 0.3);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #6b21a8;
+}
+
+/* LINK */
+a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #7e22ce;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 50px;
+}
+
+/* === ANIMASI === */
+.fade {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.7s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
